@@ -1,0 +1,32 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		//Cria uma List<String>
+		List<String> list = new ArrayList<>();
+		
+		//Adicionando itens na Lista
+		list.add("Lucas");
+		list.add("Raissa");
+		list.add("Rebeca");
+		list.add("Maria Eduarda");
+		list.add("Ana Beatriz");
+		list.add("Camila");
+		
+		//Adiciona um item na posicao 2
+		list.add(2, "Item Adicionado na Posição 2");
+		
+		//Mostra os itens da Lista
+		for(String item : list) {
+			System.out.println(item);
+		}
+		
+
+	}
+
+}

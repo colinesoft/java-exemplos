@@ -1,0 +1,48 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entities.Employee;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Scanner
+		Scanner sc = new Scanner(System.in);
+		int qtde;
+		
+		do {
+			System.out.print("Quantos funcionários serão registrados: ");
+			qtde = sc.nextInt();
+		} while(qtde<=0);
+		
+		//Cria uma lista de funcionários
+		List<Employee> funcionarios = new ArrayList<>();
+		
+		//Alimenta a lista
+		for(int i=0; i<qtde; i++) {
+			System.out.println("\nFuncionário #" + (i+1) + ": ");
+			System.out.print("Id: ");
+			int id = sc.nextInt();
+			sc.nextLine();
+			System.out.print("Nome: ");
+			String nome = sc.nextLine();
+			System.out.print("Salário: ");
+			double salario = sc.nextDouble();
+			
+			//Cria um Item para adiciona à lista
+			Employee func = new Employee(id, nome, salario);
+			funcionarios.add(func);
+		}
+		
+		//obtem o funcionário que terá aumento
+		System.out.print("\nQual funcionário terá aumento (ID): ");
+		int id = sc.nextInt();
+		
+		
+		
+	}
+
+}

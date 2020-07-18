@@ -1,0 +1,46 @@
+package application;
+
+import java.util.Scanner;
+import entities.Quarto;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Classe Scanner para obter um valor via teclado
+		Scanner sc = new Scanner(System.in);
+		int rooms;
+		
+		do {
+			//Exibe a Mensagem
+			System.out.print("How many rooms will be rent? ");
+			rooms = sc.nextInt();			
+		} while(rooms <1 || rooms >10);
+		
+		//cria um array
+		Quarto[] quarto = new Quarto[rooms];
+		
+		//libera o nextLine do primeiro nextInt
+		sc.hasNextLine();
+		
+		//obtem os dados para os quartos
+		for(int i=0; i<quarto.length; i++) {
+			System.out.print("\nRent #" + (i+1));
+			System.out.print("\nName: ");
+			String nome = sc.nextLine();
+			
+			System.out.print("\nEmail: ");
+			String email = sc.nextLine();
+			
+			System.out.print("\nRoom: ");			
+			int room = sc.nextInt();
+			
+			quarto[i].setNome(nome);
+			quarto[i].setEmail(email);
+			quarto[i].setQuarto(room);
+		}
+		
+		
+		
+	}
+
+}

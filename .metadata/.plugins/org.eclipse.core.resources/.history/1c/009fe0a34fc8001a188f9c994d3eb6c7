@@ -1,0 +1,27 @@
+package application;
+
+import entities.Aluno;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Aluno aluno1 = new Aluno();
+		Aluno aluno2;
+		
+		
+		
+		aluno1.p1 = 10;
+		aluno1.p2 = 0;
+		
+		aluno2 = aluno1;
+		
+		System.out.println(aluno1.resultado());
+		
+		aluno2.p2 = 50;
+
+		System.out.println(aluno1.resultado());
+
+	}
+
+}

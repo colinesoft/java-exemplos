@@ -1,0 +1,21 @@
+package application;
+
+import java.util.Scanner;
+import entities.Quarto;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Classe Scanner para obter um valor via teclado
+		Scanner sc = new Scanner(System.in);
+		int rooms;
+		
+		do {
+			//Exibe a Mensagem
+			System.out.print("How many rooms will be rent? ");
+			rooms = sc.nextInt();			
+		} while(rooms <0 && rooms >9);
+		
+	}
+
+}

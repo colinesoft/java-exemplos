@@ -1,0 +1,19 @@
+package application;
+
+import java.text.SimpleDateFormat;
+import java.time.Instant;
+import java.util.Date;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// Trabalhando por data
+		SimpleDateFormat sdf1 = new SimpleDateFormat("dd/MM/yyyy");
+		
+		//PADRÃO ISO 8601 -> yyyy-MM-ddTHH:mm:ssZ
+		Date dt = Date.from(Instant.parse("1977-04-15T22:35:15Z"));
+		
+		System.out.println(dt);
+	}
+
+}

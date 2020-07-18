@@ -1,0 +1,34 @@
+package application;
+
+import java.util.Scanner;
+import entities.Quarto;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Classe Scanner para obter um valor via teclado
+		Scanner sc = new Scanner(System.in);
+		
+		//cria um vetor com 10 quartos
+		Quarto[] quartos = new Quarto[10];
+		int rooms =3;
+		
+		//Pergunta quantos quartos deseja alocar
+		do {
+			//Exibe a Mensagem
+			System.out.print("How many rooms will be rent? ");
+			//rooms = sc.nextInt();			
+		} while(rooms <1 || rooms >10);
+		
+		
+		//chegou aqui
+		System.out.println("_________________________");
+		
+		System.out.println("Name:");
+		String nome = sc.nextLine();
+		
+		System.out.println(nome);
+		
+	}
+
+}

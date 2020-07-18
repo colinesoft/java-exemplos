@@ -1,0 +1,22 @@
+package application;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entities.Employee;
+
+public class Main {
+
+	public static void main(String[] args) {
+		//Scanner
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Quantos funcionários serão registrados: ");
+		int qtde = sc.nextInt();
+		
+		//Cria uma lista de funcionários
+		List<Employee> funcionarios = new ArrayList<>();
+		
+	}
+
+}

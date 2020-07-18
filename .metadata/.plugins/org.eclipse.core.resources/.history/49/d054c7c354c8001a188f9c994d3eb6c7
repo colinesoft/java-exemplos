@@ -1,0 +1,15 @@
+package entities;
+
+public class Aluno {
+	public String nome;
+	public double p1;
+	public double p2;
+	
+	public double media() {
+		return (p1 + p2) / 2;
+	}
+	
+	public String resultado() {
+		return media() >= 6 ? "Aprovado" : "Reprovado";
+	}
+}
